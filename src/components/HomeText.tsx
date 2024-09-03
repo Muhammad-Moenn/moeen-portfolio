@@ -10,7 +10,7 @@ import { CiYoutube } from "react-icons/ci";
 import Nametextanimation from "@/components/nametext";
 import { useRef } from "react";
 function HomeText() {
-    const ref = useRef();
+    const ref = useRef<Element>();
     const isInView = useInView(ref);
   return (
     <div>

@@ -36,9 +36,7 @@ const info = [
 function ContactInner() {
   const pathname = usePathname();
 
-  const handleform = (e) => {
-    e.preventDefault();
-  };
+  
   return (
     <>
       {pathname === "/contact" ? (
@@ -52,11 +50,10 @@ function ContactInner() {
             <div className="flex flex-col lg:flex-row gap-[30px] mt-13 mb-13">
               <div className="h-[54%] mx-auto lg:max-w-[65%] order-2 lg:order-none mb-[30px]">
                 <form
-                  onSubmit={handleform}
                   className="flex flex-col gap-6 p-10 bg-[#1b1b20] rounded-lg"
                 >
                   <h3 className="text-4xl text-green-500">
-                    Let's work to gather
+                    Let&#39;s work to gather
                   </h3>
                   <p className="text-white/60">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -95,7 +92,6 @@ function ContactInner() {
                     placeholder="Type your message here"
                   />
                   <Button
-                    onClick={handleform}
                     className="max-w-40 py-3 bg-green-600 text-[18px] font-medium"
                   >
                     Send Message
