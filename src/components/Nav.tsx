@@ -1,9 +1,6 @@
 'use client'
-import { setLoading } from "@/feature/LoadingSlice"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect, useState } from "react"
-import { useDispatch } from "react-redux"
 
 const links=[
   {

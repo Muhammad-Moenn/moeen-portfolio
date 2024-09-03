@@ -10,19 +10,17 @@ import { CiYoutube } from "react-icons/ci";
 import Nametextanimation from "@/components/nametext";
 import { useRef } from "react";
 function HomeText() {
-    const ref = useRef<Element>();
-    const isInView = useInView(ref);
   return (
     <div>
-      <div className=" text-center md:pl-3 lg:text-left" ref={ref}>
+      <div className=" text-center md:pl-3 lg:text-left" >
         <motion.span 
         initial={{ y: 60, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
+        animate={ { y: 0, opacity: 1 } }
         transition={{ type: "spring", duration: 2,delay:1.7 }}
         className="text-4xl">Frounted Developer</motion.span>
         <motion.h1 
         initial={{ y: 60, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
+        animate={ {y: 0, opacity: 1 } }
         transition={{ type: "spring", duration: 2,delay:2 }}
         className="text-[40px] sm:text-[49px] md:text-[55px]lg:text-[63px] leading-[1.1] font-semibold mb-6">
           Hello, I am
@@ -33,7 +31,7 @@ function HomeText() {
         </motion.h1>
         <motion.p 
         initial={{ y: 60, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
+        animate={ { y: 0, opacity: 1 } }
         transition={{ type: "spring", duration: 2,delay:2.3 }}
         className="max-w-[490px]">
           I excel in crafting elegant digital experiences and I am proficient in
@@ -41,7 +39,7 @@ function HomeText() {
         </motion.p>
         <motion.div 
         initial={{ y: 60, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
+        animate={ { y: 0, opacity: 1 } }
         transition={{ type: "spring", duration: 2,delay:2.6 }}
         className="flex flex-col gap-7 items-center justify-center md:flex-row md:justify-normal md:items-center">
           <Button className="flex gap-2 text-green-400 bg-[#0c0c0e]  border-2 border-green-500 hover:text-gray-950 mt-8">
@@ -50,7 +48,7 @@ function HomeText() {
           </Button>
           <motion.div 
           initial={{ y: 60, opacity: 0 }}
-          animate={isInView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 } }
           transition={{ type: "spring", duration: 2,delay:3 }}
           className="mb-10 flex gap-3 items-end justify-center md:mb-0">
             <Link
