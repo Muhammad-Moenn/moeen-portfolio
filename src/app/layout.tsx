@@ -23,12 +23,12 @@ export default function RootLayout({
     <html lang="en">
       
       <body className="bg-gray-950 text-white font-Roboto Condensed">
-        <PageTransition>
+        {/* <PageTransition> */}
           <StairsTransition/>
 
           <Header />
           {children}
-        </PageTransition>
+        {/* </PageTransition> */}
       </body>
     </html>
   );

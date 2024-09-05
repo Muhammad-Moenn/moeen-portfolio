@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 function StairsTransition() {
   const pathname = usePathname();
 
-  const reverseIndex = (index) => {
+  const reverseIndex = (index:number) => {
     const totalstep = 6;
     return totalstep - index - 1;
   };

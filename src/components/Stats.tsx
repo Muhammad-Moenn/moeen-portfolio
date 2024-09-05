@@ -3,7 +3,7 @@ import { motion ,useInView} from "framer-motion";
 import { useRef } from "react";
 import  CountUp  from 'react-countup';
 function Stats() {
-    const ref = useRef();
+    const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref);
     const stats=[
         {

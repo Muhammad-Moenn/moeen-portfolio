@@ -140,7 +140,7 @@ const projects = [
 ];
 function WorkInner() {
   const [project, setproject] = useState(projects[0]);
-  const handleslidechange = (swiper) => {
+  const handleslidechange = (swiper:{activeIndex:number}) => {
     const currentindex = swiper.activeIndex;
     setproject(projects[currentindex]);
   };

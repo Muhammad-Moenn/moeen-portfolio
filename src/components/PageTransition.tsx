@@ -1,11 +1,12 @@
-'use client'
+// 'use client'
 import { AnimatePresence, easeIn, easeInOut, motion } from "framer-motion"
 import { usePathname } from "next/navigation"
-function PageTransition({children}) {
-    const pathname=usePathname();
+function PageTransition() {
+    // const pathname=usePathname();
 
   return (
-    <div>
+   <>
+    {/* <div>
         <AnimatePresence>
             <div key={pathname}>
                 <motion.div
@@ -18,7 +19,8 @@ function PageTransition({children}) {
             </div>
             
         </AnimatePresence>
-    </div>
+    </div> */}
+   </>
   )
 }
 
