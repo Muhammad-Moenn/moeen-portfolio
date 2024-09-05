@@ -115,19 +115,9 @@ const projects = [
     live: "https://movieplayer-mfd.netlify.app/login",
     github: "https://github.com/Muhammad-Moenn/movieplayer",
   },
+  
   {
     num: "07",
-    title: "Whisyoo Clone",
-    category: "Fronted Project",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi facilis",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JS" }],
-    image: Wishyoo,
-    live: "",
-    github: "https://github.com/Muhammad-Moenn/Edusityclone",
-  },
-  {
-    num: "08",
     title: "Cuurency Converter",
     category: "Fronted Project",
     description:
